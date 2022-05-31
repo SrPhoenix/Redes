@@ -1,0 +1,12 @@
+| 2200:0:0:0::/64 | Vlan Management | TRUE estava a falar do ponto de vista tecnico
+| 2200:0:0:1::/64 | Vlan Engenharia |
+| 2200:0:0:2::/64 | Vlan VoIP       |
+| 2200:0:0:3::/64 | Vlan Videconf   |
+| 2200:0:0:4::/64 | DMZ             |
+| 2200:0:0:5::/64 | OldBuilding     |
+| 2200:0:0:6::/64 | Site B          |
+| 2200:0:0:7::/64 | Datacenter      |
+| 2200:0:0:8::/64 | btw rt1 e swA   | ja tinhas feito isto nao tinah visto fck me sry
+| 2200:0:0:9::/64 | btw rt1 e swb   | Sry vicente
+| 2200:0:0:a::/64 | btw rt2 e swb   |
+Hm secalhar o Tunnel 0 nao serve para ipv6 static route porque porque se escreve que o mode de ipsec e so ipv4

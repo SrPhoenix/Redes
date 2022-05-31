@@ -1,0 +1,51 @@
+Jan 29 11:24:52.148 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 29 11:24:52.148 HYPERVISOR: Started on IP = localhost, TCP port = 36987.
+Jan 29 11:24:52.158 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 29 11:24:52.158 HYPERVISOR: exec_cmd: hypervisor working_dir /home/vicente/Desktop/Projeto2adeus1/project-files/dynamips 
+Jan 29 11:24:52.158 GENERAL: working_dir=/home/vicente/Desktop/Projeto2adeus1/project-files/dynamips
+Jan 29 11:24:52.159 HYPERVISOR: exec_cmd: hypervisor working_dir /home/vicente/Desktop/Projeto2adeus1/project-files/dynamips/e9b92e21-5acd-4518-95e8-986a7c9bf6bb 
+Jan 29 11:24:52.159 GENERAL: working_dir=/home/vicente/Desktop/Projeto2adeus1/project-files/dynamips/e9b92e21-5acd-4518-95e8-986a7c9bf6bb
+Jan 29 11:24:52.159 HYPERVISOR: exec_cmd: vm create ISP 4 c3725 
+Jan 29 11:24:52.159 VM: VM ISP created.
+Jan 29 11:24:52.159 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP 5029 
+Jan 29 11:24:52.159 HYPERVISOR: exec_cmd: c3725 get_mac_addr ISP 
+Jan 29 11:24:52.159 HYPERVISOR: exec_cmd: vm set_disk0 ISP 0 
+Jan 29 11:24:52.160 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 11:24:52.160 HYPERVISOR: exec_cmd: vm set_idle_pc ISP 0x602361d8 
+Jan 29 11:24:52.160 HYPERVISOR: exec_cmd: vm set_ios ISP /home/vicente/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 29 11:24:52.160 HYPERVISOR: exec_cmd: c3725 set_mac_addr ISP c204.7638.0000 
+Jan 29 11:24:52.160 HYPERVISOR: exec_cmd: vm set_nvram ISP 256 
+Jan 29 11:24:52.160 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 11:24:52.161 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 1 0 NM-1FE-TX 
+Jan 29 11:24:52.161 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 11:24:52.161 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 2 0 NM-1FE-TX 
+Jan 29 11:24:52.515 HYPERVISOR: exec_cmd: nio create_udp udp-ee506781-a8b2-4ce7-b909-65bb8ed8ba7d 10002 127.0.0.1 10003 
+Jan 29 11:24:52.727 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 0 udp-ee506781-a8b2-4ce7-b909-65bb8ed8ba7d 
+Jan 29 11:24:52.727 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 11:31:04.071 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
+Jan 29 11:31:04.072 HYPERVISOR: exec_cmd: vm set_ghost_file ISP /home/vicente/Desktop/Projeto2adeus1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 29 11:31:04.073 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 11:31:04.074 HYPERVISOR: exec_cmd: vm set_config ISP configs/i4_startup-config.cfg 
+Jan 29 11:31:04.074 HYPERVISOR: exec_cmd: vm start ISP 
+Jan 29 11:38:38.284 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 11:38:38.285 HYPERVISOR: exec_cmd: vm stop ISP 
+Jan 29 11:38:38.363 VM: VM ISP shutdown.
+Jan 29 11:38:38.364 HYPERVISOR: exec_cmd: vm extract_config ISP 
+Jan 29 11:41:51.328 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
+Jan 29 11:41:51.328 HYPERVISOR: exec_cmd: vm set_ghost_file ISP /home/vicente/Desktop/Projeto2adeus1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 29 11:41:51.329 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 11:41:51.329 HYPERVISOR: exec_cmd: vm set_config ISP configs/i4_startup-config.cfg 
+Jan 29 11:41:51.329 HYPERVISOR: exec_cmd: vm start ISP 
+Jan 29 12:46:36.647 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 12:46:36.649 HYPERVISOR: exec_cmd: vm stop ISP 
+Jan 29 12:46:36.745 VM: VM ISP shutdown.
+Jan 29 12:46:36.746 HYPERVISOR: exec_cmd: vm extract_config ISP 
+Jan 29 12:46:41.614 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 12:46:41.614 HYPERVISOR: exec_cmd: vm extract_config ISP 
+Jan 29 12:46:41.809 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 29 12:46:41.809 HYPERVISOR: exec_cmd: vm extract_config ISP 
+Jan 29 12:46:41.811 HYPERVISOR: exec_cmd: vm delete ISP 
+Jan 29 12:46:41.811 VM: VM ISP destroyed.
+Jan 29 12:46:41.812 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 29 12:46:42.231 HYPERVISOR: Stopped.
+Jan 29 12:46:42.231 GENERAL: reset done.

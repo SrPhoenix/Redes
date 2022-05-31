@@ -1,0 +1,68 @@
+!router 2
+conf t 
+int f0/1
+no shut
+ip address 10.1.2.2 255.255.255.0
+int f0/0
+no shut
+ip address 11.11.1.2 255.255.255.0
+router rip
+version 2
+network 10.1.2.0
+network 11.11.1.0
+
+conf t
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 11.11.1.1 
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+exit
+
+interface Tunnel 0 
+ip unnumbered FastEthernet0/0 
+tunnel source 11.11.1.2 
+tunnel destination 11.11.1.1
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec 
+ip route 192.1.1.45 255.255.255.255 Tunnel 0 
+
+
+!router 3
+
+conf t 
+int f0/1
+no shut
+ip address 192.1.1.1 255.255.255.0
+int f0/0
+no shut
+ip address 11.11.1.1 255.255.255.0
+router rip
+version 2
+network 192.1.1.0
+network 11.11.1.0
+
+conf t 
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 11.11.1.2 
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+exit
+
+interface Tunnel 0 
+ip unnumbered FastEthernet0/0 
+tunnel source 11.11.1.1
+tunnel destination 11.11.1.2
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec 
+ip route 10.1.2.0 255.255.255.255 Tunnel 0 

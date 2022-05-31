@@ -1,0 +1,49 @@
+Jan 29 16:44:53.742 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 29 16:44:53.742 HYPERVISOR: Started on IP = localhost, TCP port = 40941.
+Jan 29 16:44:53.752 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 29 16:44:53.753 HYPERVISOR: exec_cmd: hypervisor working_dir /home/vicente/Desktop/Hotstuff/Projeto2adeus11/project-files/dynamips 
+Jan 29 16:44:53.753 GENERAL: working_dir=/home/vicente/Desktop/Hotstuff/Projeto2adeus11/project-files/dynamips
+Jan 29 16:44:53.753 HYPERVISOR: exec_cmd: hypervisor working_dir /home/vicente/Desktop/Hotstuff/Projeto2adeus11/project-files/dynamips/1f71e843-e59d-4cc3-afd7-6a4f66494ee6 
+Jan 29 16:44:53.753 GENERAL: working_dir=/home/vicente/Desktop/Hotstuff/Projeto2adeus11/project-files/dynamips/1f71e843-e59d-4cc3-afd7-6a4f66494ee6
+Jan 29 16:44:53.753 HYPERVISOR: exec_cmd: vm create Router2 5 c3725 
+Jan 29 16:44:53.753 VM: VM Router2 created.
+Jan 29 16:44:53.753 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router2 5031 
+Jan 29 16:44:53.753 HYPERVISOR: exec_cmd: c3725 get_mac_addr Router2 
+Jan 29 16:44:53.753 HYPERVISOR: exec_cmd: vm set_disk0 Router2 0 
+Jan 29 16:44:53.753 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 16:44:53.754 HYPERVISOR: exec_cmd: vm set_idle_pc Router2 0x602361d8 
+Jan 29 16:44:53.754 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/vicente/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 29 16:44:53.754 HYPERVISOR: exec_cmd: c3725 set_mac_addr Router2 c205.2818.0000 
+Jan 29 16:44:53.754 HYPERVISOR: exec_cmd: vm set_nvram Router2 256 
+Jan 29 16:44:53.754 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 16:44:53.755 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 1 0 NM-1FE-TX 
+Jan 29 16:44:53.755 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 16:44:53.755 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 2 0 NM-1FE-TX 
+Jan 29 16:44:56.434 HYPERVISOR: exec_cmd: nio create_udp udp-8f564f7f-a482-4e27-9e9f-dfe78c74e644 10070 127.0.0.1 10071 
+Jan 29 16:44:56.645 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 0 udp-8f564f7f-a482-4e27-9e9f-dfe78c74e644 
+Jan 29 16:44:56.646 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 16:44:57.420 HYPERVISOR: exec_cmd: nio create_udp udp-8083d61a-03b2-4fe2-834c-695e151f554e 10098 127.0.0.1 10099 
+Jan 29 16:44:57.421 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 1 udp-8083d61a-03b2-4fe2-834c-695e151f554e 
+Jan 29 16:44:57.421 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 16:45:06.526 HYPERVISOR: exec_cmd: vm set_ghost_status Router2 2 
+Jan 29 16:45:06.527 HYPERVISOR: exec_cmd: vm set_ghost_file Router2 /home/vicente/Desktop/Hotstuff/Projeto2adeus11/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 29 16:45:06.527 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 16:45:06.527 HYPERVISOR: exec_cmd: vm set_config Router2 configs/i5_startup-config.cfg 
+Jan 29 16:45:06.527 HYPERVISOR: exec_cmd: vm start Router2 
+Jan 29 17:25:07.240 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 29 17:25:07.246 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 29 17:26:37.261 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 29 17:26:37.267 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 29 17:44:07.254 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 17:44:07.255 HYPERVISOR: exec_cmd: vm stop Router2 
+Jan 29 17:44:07.374 VM: VM Router2 shutdown.
+Jan 29 17:44:07.379 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 29 17:44:37.769 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 17:44:37.770 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 29 17:44:37.921 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 29 17:44:37.922 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 29 17:44:37.922 HYPERVISOR: exec_cmd: vm delete Router2 
+Jan 29 17:44:37.923 VM: VM Router2 destroyed.
+Jan 29 17:44:37.923 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 29 17:44:38.132 HYPERVISOR: Stopped.
+Jan 29 17:44:38.132 GENERAL: reset done.

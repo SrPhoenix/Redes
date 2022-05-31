@@ -1,0 +1,88 @@
+Jan 31 17:35:21.301 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 31 17:35:21.301 HYPERVISOR: Started on IP = localhost, TCP port = 52083.
+Jan 31 17:35:21.311 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 31 17:35:21.312 HYPERVISOR: exec_cmd: hypervisor working_dir /home/vicente/GNS3/projects/projeto/project-files/dynamips 
+Jan 31 17:35:21.312 GENERAL: working_dir=/home/vicente/GNS3/projects/projeto/project-files/dynamips
+Jan 31 17:35:21.312 HYPERVISOR: exec_cmd: hypervisor working_dir /home/vicente/GNS3/projects/projeto/project-files/dynamips/d12023c0-185d-432f-a89f-e7316ac7d3fb 
+Jan 31 17:35:21.312 GENERAL: working_dir=/home/vicente/GNS3/projects/projeto/project-files/dynamips/d12023c0-185d-432f-a89f-e7316ac7d3fb
+Jan 31 17:35:21.312 HYPERVISOR: exec_cmd: vm create SWL_B 4 c3725 
+Jan 31 17:35:21.312 VM: VM SWL_B created.
+Jan 31 17:35:21.312 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL_B 5047 
+Jan 31 17:35:21.312 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL_B 
+Jan 31 17:35:21.312 HYPERVISOR: exec_cmd: vm set_disk0 SWL_B 1 
+Jan 31 17:35:21.313 HYPERVISOR: exec_cmd: vm set_ios SWL_B /home/vicente/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 31 17:35:21.313 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL_B c204.1280.0000 
+Jan 31 17:35:21.313 HYPERVISOR: exec_cmd: vm set_nvram SWL_B 256 
+Jan 31 17:35:21.313 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:21.313 HYPERVISOR: exec_cmd: vm slot_add_binding SWL_B 1 0 NM-16ESW 
+Jan 31 17:35:21.313 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:21.314 HYPERVISOR: exec_cmd: vm slot_add_binding SWL_B 2 0 NM-1FE-TX 
+Jan 31 17:35:22.272 HYPERVISOR: exec_cmd: nio create_udp udp-23dcb9fe-1dae-456b-98c4-92cd4ab3ce20 10014 127.0.0.1 10015 
+Jan 31 17:35:22.489 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 1 1 udp-23dcb9fe-1dae-456b-98c4-92cd4ab3ce20 
+Jan 31 17:35:22.490 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:22.564 HYPERVISOR: exec_cmd: nio create_udp udp-8f21044d-10ad-4ba4-a6e9-445cf6445832 10018 127.0.0.1 10019 
+Jan 31 17:35:22.565 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 0 1 udp-8f21044d-10ad-4ba4-a6e9-445cf6445832 
+Jan 31 17:35:22.565 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:22.627 HYPERVISOR: exec_cmd: nio create_udp udp-489f1a12-6524-4da8-8181-cd8ab312910c 10022 127.0.0.1 10023 
+Jan 31 17:35:22.628 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 1 0 udp-489f1a12-6524-4da8-8181-cd8ab312910c 
+Jan 31 17:35:22.628 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:25.035 HYPERVISOR: exec_cmd: nio create_udp udp-8b6b9284-fbe3-4b64-9a64-e4edb473732a 10082 127.0.0.1 10083 
+Jan 31 17:35:25.036 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 1 2 udp-8b6b9284-fbe3-4b64-9a64-e4edb473732a 
+Jan 31 17:35:25.036 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:25.794 HYPERVISOR: exec_cmd: nio create_udp udp-cf042695-53f3-43f0-a14a-3ca06fc85e54 10110 127.0.0.1 10111 
+Jan 31 17:35:25.796 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 0 0 udp-cf042695-53f3-43f0-a14a-3ca06fc85e54 
+Jan 31 17:35:25.796 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:36.978 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jan 31 17:35:36.978 VM: VM Ghost created.
+Jan 31 17:35:36.983 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/vicente/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 31 17:35:36.984 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 31 17:35:36.986 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/vicente/GNS3/projects/projeto/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 31 17:35:36.987 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 31 17:35:36.988 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 31 17:35:36.988 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 31 17:35:37.275 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 31 17:35:37.275 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 31 17:35:37.435 VM: VM Ghost shutdown.
+Jan 31 17:35:37.437 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 31 17:35:37.439 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 31 17:35:37.439 VM: VM Ghost destroyed.
+Jan 31 17:35:37.442 HYPERVISOR: exec_cmd: vm set_ghost_status SWL_B 2 
+Jan 31 17:35:37.443 HYPERVISOR: exec_cmd: vm set_ghost_file SWL_B /home/vicente/GNS3/projects/projeto/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 31 17:35:37.444 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 17:35:37.446 HYPERVISOR: exec_cmd: vm set_config SWL_B configs/i4_startup-config.cfg 
+Jan 31 17:35:37.447 HYPERVISOR: exec_cmd: vm start SWL_B 
+Jan 31 18:30:30.967 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:30:30.969 HYPERVISOR: exec_cmd: vm slot_disable_nio SWL_B 1 1 
+Jan 31 18:30:30.978 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SWL_B 1 1 
+Jan 31 18:30:30.980 HYPERVISOR: exec_cmd: nio delete udp-23dcb9fe-1dae-456b-98c4-92cd4ab3ce20 
+Jan 31 18:30:35.358 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:30:35.360 HYPERVISOR: exec_cmd: vm slot_disable_nio SWL_B 1 0 
+Jan 31 18:30:35.363 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SWL_B 1 0 
+Jan 31 18:30:35.372 HYPERVISOR: exec_cmd: nio delete udp-489f1a12-6524-4da8-8181-cd8ab312910c 
+Jan 31 18:31:08.777 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:31:08.778 HYPERVISOR: exec_cmd: vm slot_disable_nio SWL_B 0 1 
+Jan 31 18:31:08.790 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SWL_B 0 1 
+Jan 31 18:31:08.792 HYPERVISOR: exec_cmd: nio delete udp-8f21044d-10ad-4ba4-a6e9-445cf6445832 
+Jan 31 18:31:15.713 HYPERVISOR: exec_cmd: nio create_udp udp-ffe5ea28-0f17-4d5e-96f2-471602c673f3 10014 127.0.0.1 10015 
+Jan 31 18:31:15.721 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 0 1 udp-ffe5ea28-0f17-4d5e-96f2-471602c673f3 
+Jan 31 18:31:15.721 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:31:15.722 HYPERVISOR: exec_cmd: vm slot_enable_nio SWL_B 0 1 
+Jan 31 18:31:22.050 HYPERVISOR: exec_cmd: nio create_udp udp-b3e567eb-d61c-4ecd-a60a-405a8b81922b 10018 127.0.0.1 10019 
+Jan 31 18:31:22.053 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 1 0 udp-b3e567eb-d61c-4ecd-a60a-405a8b81922b 
+Jan 31 18:31:22.054 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:31:22.054 HYPERVISOR: exec_cmd: vm slot_enable_nio SWL_B 1 0 
+Jan 31 18:31:32.039 HYPERVISOR: exec_cmd: nio create_udp udp-ea655dc0-1ce6-4b61-b462-176822dea7b0 10022 127.0.0.1 10023 
+Jan 31 18:31:32.045 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL_B 1 1 udp-ea655dc0-1ce6-4b61-b462-176822dea7b0 
+Jan 31 18:31:32.047 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:31:32.047 HYPERVISOR: exec_cmd: vm slot_enable_nio SWL_B 1 1 
+Jan 31 18:47:47.433 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:47:47.435 HYPERVISOR: exec_cmd: vm stop SWL_B 
+Jan 31 18:47:47.616 VM: VM SWL_B shutdown.
+Jan 31 18:47:47.627 HYPERVISOR: exec_cmd: vm extract_config SWL_B 
+Jan 31 18:47:50.123 HYPERVISOR: exec_cmd: vm get_status SWL_B 
+Jan 31 18:47:50.123 HYPERVISOR: exec_cmd: vm extract_config SWL_B 
+Jan 31 18:47:50.125 HYPERVISOR: exec_cmd: vm delete SWL_B 
+Jan 31 18:47:50.126 VM: VM SWL_B destroyed.
+Jan 31 18:47:50.126 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 31 18:47:50.218 HYPERVISOR: Stopped.
+Jan 31 18:47:50.218 GENERAL: reset done.

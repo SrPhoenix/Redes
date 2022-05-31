@@ -1,0 +1,13 @@
+2200:0:0:0::/64 | Vlan Management |
+2200:0:0:1::/64 | Vlan Engenharia |
+2200:0:0:2::/64 | Vlan VoIP       |
+2200:0:0:3::/64 | Vlan Videconf   |
+2200:0:0:4::/64 | DMZ             |
+2200:0:0:5::/64 | OldBuilding     |
+2200:0:0:6::/64 | Site B          |
+2200:0:0:7::/64 | Datacenter      |
+2200:0:0:8::/64 | btw rt1 e swA   |
+2200:0:0:9::/64 | btw rt1 e swb   |
+2200:0:0:a::/64 | btw rt2 e swb   |
+
+

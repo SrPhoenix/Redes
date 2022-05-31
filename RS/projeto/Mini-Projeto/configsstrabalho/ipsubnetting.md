@@ -1,0 +1,5 @@
+[Available](Available) adrresses 10.10.0.0/16
+`Precisamos de 3 redes de netMask 27`
+| 00001010 0001010 | 00000000 000XXXXX /27 |
+| 00001010 0001010 | 00000000 001XXXXX /27 |
+| 00001010 0001010 | 00000000 011XXXXX /27 |
